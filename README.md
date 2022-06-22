@@ -23,13 +23,12 @@
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
+This is a backend application aplication holds the api's for Job Application Project
 ## Installation
 
 ```bash
 $ npm install
+$ docker-compose up
 ```
 
 ## Running the app
@@ -59,15 +58,8 @@ $ npm run test:cov
 ```
 
 ## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+in case of Support please contact the Author.
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+- Author - [Muzuri Aimable](https://www.linkedin.com/in/aimable-muzuri/)
