@@ -6,8 +6,8 @@ import * as fs from 'fs';
 
 async function bootstrap() {
   const httpsOptions = {
-    key: fs.readFileSync('./secrets/private-key.pem'),
-    cert: fs.readFileSync('./secrets/public-certificate.pem'),
+    key: "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEYxP+TeKa8mShUKWAedAkcFgSkVwjSYgAnh9n/9Wsu41vpRrs5zS9aHi/HZo3kS6uZn3EkLSsLM1KlGO6L16yyw==",
+    cert: "MHcCAQEEIOFdh1TgWtK2YuqUwLLyIi55n0scCP0BXr8gm1ZUhINkoAoGCCqGSM49AwEHoUQDQgAEYxP+TeKa8mShUKWAedAkcFgSkVwjSYgAnh9n/9Wsu41vpRrs5zS9aHi/HZo3kS6uZn3EkLSsLM1KlGO6L16yyw==",
   };
   const app = await NestFactory.create(AppModule, {
     httpsOptions,
