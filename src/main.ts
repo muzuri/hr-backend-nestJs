@@ -5,9 +5,10 @@ import { AppModule } from './app.module';
 import * as fs from 'fs';
 
 async function bootstrap() {
+  const path = require('path');
   const httpsOptions = {
-    key: "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEYxP+TeKa8mShUKWAedAkcFgSkVwjSYgAnh9n/9Wsu41vpRrs5zS9aHi/HZo3kS6uZn3EkLSsLM1KlGO6L16yyw==",
-    cert: "MHcCAQEEIOFdh1TgWtK2YuqUwLLyIi55n0scCP0BXr8gm1ZUhINkoAoGCCqGSM49AwEHoUQDQgAEYxP+TeKa8mShUKWAedAkcFgSkVwjSYgAnh9n/9Wsu41vpRrs5zS9aHi/HZo3kS6uZn3EkLSsLM1KlGO6L16yyw==",
+    key: fs.readFileSync(path.join(__dirname, 'cert', 'key.pem')),
+    cert: fs.readFileSync(path.join(__dirname, 'cert', 'cert.pem'))
   };
   const app = await NestFactory.create(AppModule, {
     httpsOptions,
