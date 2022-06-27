@@ -40,20 +40,6 @@ export class ApplicantService {
         return this.applicantRepository.update(id, data)
     }
 
-    async changeStatusPassed(id: number): Promise<any> {
-       return await this.applicantRepository.update(
-          { id: id },
-          { status: "Passed"},
-        );
-
-      }
-      async changeStatus(id: number, status: string): Promise<any> {
-       return await this.applicantRepository.update(
-          { id: id },
-          { status: status},
-        );
-      }
-
     async delete(id: number): Promise<any> {
         return this.applicantRepository.delete(id);
     }

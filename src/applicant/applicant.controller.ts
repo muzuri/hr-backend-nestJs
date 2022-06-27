@@ -22,7 +22,6 @@ export class ApplicantController {
         @Param('id') id:number,
         @Body() body: ApplicantionDto
     ) {
-        console.log(`$nnnnnnnnnnnnnnnn${body}`);
         return await this.applicantService.update(id, body);
     }
 
@@ -30,17 +29,6 @@ export class ApplicantController {
     async get(@Param('id') id: number) {
         return this.applicantService.findOne(id);
     }
-    // @Post(':id')
-    // async changeStatus(
-    //     @Param('id') id: number,
-    //     @Param('status') status: string
-    // ) {
-    //     return await this.applicantService.changeStatus(id, status);
-    // }
-
-   
- 
-    
 
     @Delete(':id')
     async delete(@Param('id') id: number) {
